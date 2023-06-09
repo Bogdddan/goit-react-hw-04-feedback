@@ -1,0 +1,15 @@
+.staticsticsUl{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.statisticsLi{
+    padding: 7px 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 10px solid #82d18d;
+    border: 1px solid black;
+    font-size: 20px;
+}

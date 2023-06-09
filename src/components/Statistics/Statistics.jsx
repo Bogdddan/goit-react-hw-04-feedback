@@ -1,15 +1,14 @@
-// import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-// import { List, Item } from './Statistic.styled';
+import css from './Statistics.module.css';
 
 export function Statistics ({good , neutral , bad , positivePercentage , total}) {
     return (
-      <ul>
-        <li>Good: {good}</li>
-        <li>Neutral: {neutral}</li>
-        <li>Bad: {bad}</li>
-        <li>Total: {total()}</li >
-        <li>Positive feedback: {positivePercentage()}%</li>
+      <ul className={css.statisticsUl}>
+        <li className={css.statisticLi}>Good: {good}</li>
+        <li className={css.statisticLi}>Neutral: {neutral}</li>
+        <li className={css.statisticLi}>Bad: {bad}</li>
+        <li className={css.statisticLi}>Total: {total}</li >
+        <li className={css.statisticLi}>Positive feedback: {positivePercentage}%</li>
       </ul>
     );
 }

@@ -1,11 +1,10 @@
-// import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-// import { Title, SectionDiv } from './Section.styled';
+import css from './Section.module.css';
 
 export function Section ({ title , children }) {
     return (
-      <div>
-        <p>{title}</p>
+      <div className={css.sectionDiv}>
+        <p className={css.sectionP}>{title}</p>
         {children}
       </div>
     );
